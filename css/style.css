@@ -1,0 +1,158 @@
+body {
+	font-family: 'Roboto', sans-serif;, Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue_light-webfont.eot');
+    src: url('../fonts/bebasneue_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_light-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_light-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_light-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_light-webfont.svg#bebas_neuelight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue_book-webfont.eot');
+    src: url('../fonts/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_book-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_book-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_book-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_book-webfont.svg#bebas_neuebook') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue_regular-webfont.eot');
+    src: url('../fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_regular-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_regular-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue_bold-webfont.eot');
+    src: url('../fonts/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_bold-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_bold-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_bold-webfont.svg#bebas_neuebold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+.right {
+	text-align: right;
+}
+
+
+/* HEADER */
+div#header {
+	background-color: #FFFFFF;
+	margin: auto;
+	min-height: 580px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Bebas Neue', serif;
+}
+
+p {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+	/* NAVIGATION */
+	header {
+		margin-top: 40px;
+		background-color: #FFFFFF;
+	}
+
+		header#logo {
+			margin:0;
+			float: left;
+		}
+
+		header ul {
+			list-style-type: none;
+			color: #171922;
+			margin:0;
+			padding:0;
+			float: right;
+			clear: left;
+		}
+		
+		header li {
+			font-family: 'Bebas Neue', Roboto, Arial, sans-serif;
+			color: #171922;
+			display: inline;
+		}
+
+			header ul li a.active {
+				border: 1px solid #171922;
+				padding: 9px;
+			}
+			
+			header ul li a {
+				color: #171922;
+				text-decoration: none;
+				padding: 14px 16px;
+				text-align: center;
+			}
+			
+			header ul li a:hover:not(.active) {
+				color:#ccc;
+			}
+
+		/* HERO */
+		div.hero {
+			max-width: 50%;
+			margin: auto;
+			position: relative;
+			top: 110px;
+		}
+
+		div.hero h1 {
+			font-size: 144px;
+			margin: 0;
+			max-width: auto;
+		}
+
+/* WORK */
+div#work {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #171922;
+	min-height: 580px;
+	color: #FFFFFF;
+}
+
+	div#work h2 {
+		font-size: 100px;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+
+	div#work p {
+		width: 80%;
+		margin: auto;
+	}
+
+
+/* BENEFITS */
+
+			}
+
