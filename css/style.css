@@ -134,9 +134,7 @@ p {
 /* WORK */
 div#work {
 	margin: auto;
-	min-height: 450px;
 	padding-top: 60px;
-	padding-bottom: 60px;
 	background-color: #0B0C11;
 	color: #FFFFFF;
 }
@@ -156,6 +154,7 @@ div#work {
 	.containerA {
 		margin: auto;
     	max-width: 100%;
+    	min-height: 300px;
 	}
 
 	.caption {
@@ -232,4 +231,55 @@ div#work {
         -webkit-transform: translateY(0);
             transform: translateY(0);
 	}
+
+/* ABOUT */
+div#about {
+	min-height: 548px;
+	background-color: #FFFFFF;
+	color: black;
+	padding-bottom: 60px;
+}
+
+	span#aboutA h2 {
+		font-size: 100px;
+		padding-top: 40px;
+	}
+
+	span#first {
+		margin: auto;
+	}
+
+	span#second {
+
+	}
+
+	span#taypic {
+		float: right;
+		opacity: 0.8;
+		position: absolute;
+		min-width: 60%;
+	}
+
+	div.text {
+		position: absolute;
+	}
+
+/* ABOUT */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
