@@ -123,12 +123,14 @@ p {
 			margin: auto;
 			position: relative;
 			top: 110px;
+			text-align: left;
 		}
 
 		div.hero h1 {
 			font-size: 144px;
 			margin: 0;
-			max-width: auto;
+			max-width: 100%;
+			margin: auto;
 		}
 
 /* WORK */
@@ -274,7 +276,7 @@ div#process {
 }
 
 	div#process div#icon {
-		padding-top: 40px;	
+		padding-top: 45px;	
 	}
 
 	div#process div#icon a {
@@ -341,6 +343,42 @@ div#process {
 		padding-bottom: 0px;
 		margin-bottom: 28px;
 	}
+
+/* TOOLBOX */
+div#toolbox {
+	min-height: auto;
+	height: 406px;
+	width: 100%;
+	background-color: #53555D;
+	color: white;
+	padding-top: 50px;
+}
+
+	div#toolbox div#maintool h2 {
+		font-size: 150px;
+		line-height: 100px;
+		text-align: left;
+		padding-left: 10px;
+	}
+
+	div#toolbox div#maintool {
+		padding: 50px;
+		position: relative;
+	}
+
+	div#toolbox div#subtool h4 {
+		text-align: right;
+		line-height: 28px;
+		font-size: 30px;
+	}
+
+	div#toolbox div#subtool {
+		position: absolute;
+		bottom: 60px;
+	}
+
+
+
 
 
 
