@@ -57,6 +57,145 @@ img {
 	text-align: right;
 }
 
+/*CUSTOME MEDIA QUERIES*/
+@media (max-width: 414px) {
+	.caption {
+    	overflow: hidden;
+    	position: relative;
+    	right: 15%;
+    	padding-bottom: 5px;
+
+    	/* Only the -webkit- prefix is required these days */
+        -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+	}
+
+	div#about {
+		height: 520px;
+	}
+
+	div#about span#taypic {
+		display: none;
+	}
+
+	div#about span#first {
+		margin-right: 15px;
+	}
+
+	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
+		visibility: hidden;
+	}
+
+	div#process div#theprocess {
+		visibility: hidden;
+	}
+
+}
+
+@media (max-width: 667px) {
+	.caption {
+    	overflow: hidden;
+    	position: relative;
+      	padding-bottom: 5px;
+
+    	/* Only the -webkit- prefix is required these days */
+        -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+	}
+
+	div#about span#first {
+		width: 45%;
+	}
+	div#about span#second {
+		width: 45%;
+	}
+
+	div#about span#taypic {
+		display: none;
+	}
+
+
+	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
+		visibility: hidden;
+	}
+
+	div#process div#theprocess {
+		visibility: hidden;
+	}
+
+	div#toolbox div#maintool h2 {
+		font-size: 70px;
+	}
+
+	div#toolbox div#maintool {
+		width: 60%;
+		margin-left: 15%;
+	}
+
+	div#toolbox div#subtool {
+		width: 10%;
+		margin-left: 0;
+	}
+
+}
+	
+/* Larger than tablet */
+@media (max-width: 768px) {
+	.caption {
+    	overflow: hidden;
+    	position: relative;
+    	right: 0;
+
+    	/* Only the -webkit- prefix is required these days */
+        -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+	}
+
+	div#about {
+		padding-bottom: 0px;
+		padding-top: 0;
+		margin-top: auto;
+	}
+
+	span#taypic {
+		position: relative;
+		right: 0px;
+		width: 380px;
+	}
+
+	span#first p {
+		font-size: 14px;
+	}
+
+	span#second p {
+		font-size: 14px;
+	}
+
+	div#about span#first {
+		width: 40%;
+	}
+	div#about span#second {
+		width: 40%;
+	}
+
+	div#toolbox div#maintool {
+		width: 70%;
+		margin-left: 20%;
+	}
+
+	div#toolbox div#subtool {
+		width: 20%;
+		margin-left: 5%;
+	}
+
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
 
 /* HEADER */
 div#header {
@@ -139,6 +278,7 @@ div#work {
 	padding-top: 60px;
 	background-color: #0B0C11;
 	color: #FFFFFF;
+	padding-bottom: 60px;
 }
 
 	div#work h2 {
@@ -153,17 +293,11 @@ div#work {
 	}
 
 	/* IMAGES */
-	.containerA {
-		margin: auto;
-    	max-width: 100%;
-    	min-height: 300px;
-	}
-
 	.caption {
-    	position: relative;
     	overflow: hidden;
     	float: left;
     	max-width: auto;
+    	margin-left: 100px;
 
     	/* Only the -webkit- prefix is required these days */
         -webkit-transform: translateZ(0);
@@ -236,10 +370,9 @@ div#work {
 
 /* ABOUT */
 div#about {
-	min-height: 548px;
+	min-height: 400px;
 	background-color: #FFFFFF;
 	color: black;
-	padding-bottom: 60px;
 }
 
 	span#aboutA h2 {
@@ -249,10 +382,6 @@ div#about {
 
 	span#first {
 		margin: auto;
-	}
-
-	span#second {
-
 	}
 
 	span#taypic {
@@ -275,11 +404,19 @@ div#process {
 	color: white;
 }
 
-	div#process div#icon {
+	div#process div#icon1 {
 		padding-top: 45px;	
 	}
 
-	div#process div#icon a {
+	div#process div#icon2 {
+		padding-top: 45px;	
+	}
+
+	div#process div#icon3 {
+		padding-top: 45px;	
+	}
+
+	div#process div#icon1 a {
 		background-color: white;
 		border-radius: 50%;
 		padding: 70px;
@@ -290,12 +427,54 @@ div#process {
 		border: 3px solid white;
 	}
 
-	div#process div#icon a:hover {
+	div#process div#icon2 a {
+		background-color: white;
+		border-radius: 50%;
+		padding: 70px;
+		display: inline-block;
+		position: relative;
+		width: 80px;
+		height: 80px;
+		border: 3px solid white;
+	}
+
+	div#process div#icon3 a {
+		background-color: white;
+		border-radius: 50%;
+		padding: 70px;
+		display: inline-block;
+		position: relative;
+		width: 80px;
+		height: 80px;
+		border: 3px solid white;
+	}
+
+	div#process div#icon1 a:hover, a:active {
 		background-color: rgba(254,192,209,0.70);
 		border: 3px solid white;
 	}
 
-	div#process div#icon img {
+	div#process div#icon2 a:hover {
+		background-color: rgba(254,192,209,0.70);
+		border: 3px solid white;
+	}
+
+	div#process div#icon3 a:hover {
+		background-color: rgba(254,192,209,0.70);
+		border: 3px solid white;
+	}
+
+	div#process div#icon1 img {
+		max-width: auto;
+		max-height: 80px;
+	}
+
+	div#process div#icon2 img {
+		max-width: auto;
+		max-height: 80px;
+	}
+
+	div#process div#icon3 img {
 		max-width: auto;
 		max-height: 80px;
 	}
@@ -304,10 +483,10 @@ div#process {
 		font-size:40px;
 		font-weight: 500;
 		padding-top: 20px;
-
+		padding-bottom: 60px;
 	}
 
-	div#process div#secrettext i {
+	div#process div#secrettext1 i {
 		font-size: 15px;
 		color: #A99757;
 		vertical-align: middle;
@@ -315,24 +494,73 @@ div#process {
 		padding-left: 8px;
 	}
 
-	div#process div#secrettext h2 {
+	div#process div#secrettext2 i {
+		font-size: 15px;
+		color: #A99757;
+		vertical-align: middle;
+		padding-right: 8px;
+		padding-left: 8px;
+	}
+
+	div#process div#secrettext3 i {
+		font-size: 15px;
+		color: #A99757;
+		vertical-align: middle;
+		padding-right: 8px;
+		padding-left: 8px;
+	}
+
+	div#process div#secrettext1 h2 {
 		font-weight: 200;
 		font-size: 50px;
 		padding-top: 50px;
 	}
 
-	div#process div#secrettext {
-		max-width: 100%;
-		margin: auto;
+	div#process div#secrettext2 h2 {
+		font-weight: 200;
+		font-size: 50px;
+		padding-top: 50px;
 	}
 
+	div#process div#secrettext3 h2 {
+		font-weight: 200;
+		font-size: 50px;
+		padding-top: 50px;
+	}
+
+	div#process div#secrettext1 {
+		max-width: 100%;
+		margin: 0;
+		text-align: center;
+		display: none;
+		position: absolute;
+		bottom:0;
+	}
+
+	div#process div#secrettext2 {
+		max-width: 100%;
+		margin: 0;
+		text-align: center;
+		display: none;
+		position: absolute;
+		bottom:0;
+	}
+
+	div#process div#secrettext3 {
+		max-width: 100%;
+		margin: 0;
+		text-align: center;
+		display: none;
+		position: absolute;
+		bottom:0;
+	}
 
 	div#process div#theprocess {
 		margin: auto;
 		max-width: 100%;
 		z-index: -1;
 		position: relative;
-		bottom: 30px;
+		bottom: 20px;
 	}
 
 	div#process div#theprocess h1 {
@@ -352,6 +580,8 @@ div#toolbox {
 	background-color: #53555D;
 	color: white;
 	padding-top: 50px;
+	background-image: url('images/desk2.png');
+	background-size: contain;
 }
 
 	div#toolbox div#maintool h2 {
@@ -376,6 +606,7 @@ div#toolbox {
 		position: absolute;
 		bottom: 60px;
 	}
+
 
 
 

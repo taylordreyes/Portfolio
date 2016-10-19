@@ -25,40 +25,6 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type='text/css'>
-
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-	<script type="text/javascript">	
-		$(function() {
- 			$('div#icon1').hover(function() {
-				$('div#secrettext2').hide();
-				$('div#secrettext3').hide();
-    			$('div#secrettext1').show();
-            $(this).attr('title',$(this).children().children().html());
-            });
-		});
-	</script>
-	<script type="text/javascript">	
-		$(function() {
- 			$('div#icon2').hover(function() {
- 				$('div#secrettext3').hide();
-    			$('div#secrettext1').hide();
-    			$('div#secrettext2').show();
-  			}, function() {
-            $(this).attr('title',$(this).children().children().html());
-            });
-		});
-	</script>
-	<script type="text/javascript">	
-		$(function() {
- 			$('div#icon3').hover(function() {
-				$('div#secrettext1').hide();
-				$('div#secrettext2').hide();
-    			$('div#secrettext3').show();
-  			}, function() {
-            $(this).attr('title',$(this).children().children().html());
-            });
-		});
-	</script>
 </head>
 <body>
 	<!-- This is where your header will begin -->
@@ -69,9 +35,9 @@
 					<a href="#"><img src="images/logo.png" style="width:130px;height:30px;"></a>
 				</span>
 					<ul>
-						<li><a class="active" href="#">Home</a></li>
+						<li><a href="#">Home</a></li>
 						<li><a href="#">Work</a></li>
-						<li><a href="#">About</a></li>
+						<li><a class="active" href="#">About</a></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
 			</header>
@@ -133,37 +99,31 @@
 	<div id="process">
 		<div class="container">
 			<div class="one-third column">
-				<div id="icon1">
-					<a>
+				<div id="icon">
+					<a target="_blank" href="images/thinkicon.png">
 						<img src="images/thinkicon.png" alt="think" height="30">
 					</a>
 				</div>
 				<h3>Think</h3>
 			</div>
 			<div class="one-third column">
-				<div id="icon2">
-					<a>
+				<div id="icon">
+					<a target="_blank" href="images/designicon.png">
 						<img src="images/designicon.png" alt="design" height="30">
 					</a>
 				</div>
 				<h3>Design</h3>
 			</div>
 			<div class="one-third column">
-				<div id="icon3">
-					<a>
+				<div id="icon">
+					<a target="_blank" href="images/testicon.png">
 						<img src="images/testicon.png" alt="test" height="30">
 					</a>
 				</div>
 				<h3>Test</h3>
 			</div>
-			<div id="secrettext1" class="sixteen columns">
+			<div id="secrettext" class="sixteen columns">
 				<h2>Study <i class="fa fa-star" aria-hidden="true"></i> Plan <i class="fa fa-star" aria-hidden="true"></i> Strategize <i class="fa fa-star" aria-hidden="true"></i> Wireframe </h2>
-			</div>
-			<div id="secrettext2" class="sixteen columns">
-				<h2>Imagine <i class="fa fa-star" aria-hidden="true"></i> Architect <i class="fa fa-star" aria-hidden="true"></i> Create <i class="fa fa-star" aria-hidden="true"></i> Userflows </h2>
-			</div>
-			<div id="secrettext3" class="sixteen columns">
-				<h2>Survey <i class="fa fa-star" aria-hidden="true"></i> Usability <i class="fa fa-star" aria-hidden="true"></i> Analyze <i class="fa fa-star" aria-hidden="true"></i> Prototype </h2>
 			</div>
 			<div id="theprocess">
 				<h1>My Process</h1>
