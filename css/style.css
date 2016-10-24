@@ -625,18 +625,30 @@ div#talk {
 
 	::-webkit-input-placeholder {
    		color: white;
+   		font-family: 'Roboto';
+   		font-weight: 100;
+   		font-size: 14px;
 	}
 
 	:-moz-placeholder { /* Firefox 18- */
-   		color: white;  
+   		color: white;
+   		font-family: 'Roboto';
+   		font-weight: 100;
+   		font-size: 14px;
 	}
 
 	::-moz-placeholder {  /* Firefox 19+ */
-   		color: white;  
+   		color: white;
+   		font-family: 'Roboto';
+   		font-weight: 100;
+   		font-size: 14px;
 	}
 
 	:-ms-input-placeholder {  
-   		color: white;  
+   		color: white;
+   		font-family: 'Roboto';
+   		font-weight: 100;
+   		font-size: 14px;
 	}
 
 /* FOOTER */
