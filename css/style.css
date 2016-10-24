@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;, Helvetica, Arial, sans-serif;
+	background-color: white;
 }
 
 @font-face {
@@ -70,16 +71,8 @@ img {
             transform: translateZ(0);
 	}
 
-	div#about {
-		height: 520px;
-	}
-
-	div#about span#taypic {
-		display: none;
-	}
-
-	div#about span#first {
-		margin-right: 15px;
+	div#process {
+		min-height: auto;
 	}
 
 	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
@@ -102,18 +95,6 @@ img {
         -webkit-transform: translateZ(0);
             transform: translateZ(0);
 	}
-
-	div#about span#first {
-		width: 45%;
-	}
-	div#about span#second {
-		width: 45%;
-	}
-
-	div#about span#taypic {
-		display: none;
-	}
-
 
 	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
 		visibility: hidden;
@@ -151,32 +132,6 @@ img {
             transform: translateZ(0);
 	}
 
-	div#about {
-		padding-bottom: 0px;
-		padding-top: 0;
-		margin-top: auto;
-	}
-
-	span#taypic {
-		position: relative;
-		right: 0px;
-		width: 380px;
-	}
-
-	span#first p {
-		font-size: 14px;
-	}
-
-	span#second p {
-		font-size: 14px;
-	}
-
-	div#about span#first {
-		width: 40%;
-	}
-	div#about span#second {
-		width: 40%;
-	}
 
 	div#toolbox div#maintool {
 		width: 70%;
@@ -242,7 +197,7 @@ p {
 
 			header ul li a.active {
 				border: 1px solid #171922;
-				padding: 9px;
+				padding: 6px 7px;
 			}
 			
 			header ul li a {
@@ -267,15 +222,12 @@ p {
 
 		div.hero h1 {
 			font-size: 144px;
-			margin: 0;
-			max-width: 100%;
 			margin: auto;
 		}
 
 /* WORK */
 div#work {
-	margin: auto;
-	padding-top: 60px;
+	padding-top: 40px;
 	background-color: #0B0C11;
 	color: #FFFFFF;
 	padding-bottom: 60px;
@@ -293,11 +245,17 @@ div#work {
 	}
 
 	/* IMAGES */
+	div#example1 {
+		margin: 0px;
+		padding: 2px;
+	}
+	div#example2 {
+    	margin: 0px;
+    	padding:2px;
+	}
+
 	.caption {
     	overflow: hidden;
-    	float: left;
-    	max-width: auto;
-    	margin-left: 100px;
 
     	/* Only the -webkit- prefix is required these days */
         -webkit-transform: translateZ(0);
@@ -321,13 +279,13 @@ div#work {
 
 	.caption__media {
     	display: block;
-    	max-width: 100%;
-    	height: auto;
+    	width: 100%;
+    	height: 100%;
+
 	}
 
 	.caption__overlay {
 		padding-top: 30px;
-    	padding-right: 20px;
     	padding-left:30px;
     	padding-bottom: 20px;
     	position: absolute;
@@ -350,12 +308,14 @@ div#work {
 	}
 
 	.caption .caption__overlay__content {
-		font-size: 20px;
+		font-size: 18px;
+		margin-right: 0;
 	}
 
 	.caption__overlay__title {
 		font-size: 30px;
 		margin-bottom: 0;
+		margin-right: 0;
         -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
             transform: translateY( calc(-100% - 10px) );
 
@@ -369,43 +329,35 @@ div#work {
 	}
 
 /* ABOUT */
-div#about {
-	min-height: 400px;
-	background-color: #FFFFFF;
+div#about  {
 	color: black;
-}
+	}
 
-	span#aboutA h2 {
-		font-size: 100px;
+	div#about h2 {
 		padding-top: 40px;
+		font-size:100px;
 	}
 
-	span#first {
-		margin: auto;
-	}
-
-	span#taypic {
+	div#about img {
 		float: right;
-		opacity: 0.8;
-		position: absolute;
-		max-width: 100%
-		height: auto;
 	}
 
-	div.text {
-		position: absolute;
-	}
+
 
 /* PROCESS */
 div#process {
 	text-align: center;
-	min-height: 460px;
 	background-color: rgba(254,192,209,0.70);
 	color: white;
+	background-image: url('../images/myprocess.png');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: bottom center;
 }
 
 	div#process div#icon1 {
 		padding-top: 45px;	
+
 	}
 
 	div#process div#icon2 {
@@ -419,33 +371,33 @@ div#process {
 	div#process div#icon1 a {
 		background-color: white;
 		border-radius: 50%;
-		padding: 70px;
+		padding: 60px;
 		display: inline-block;
 		position: relative;
-		width: 80px;
-		height: 80px;
+		width: 70px;
+		height: 70px;
 		border: 3px solid white;
 	}
 
 	div#process div#icon2 a {
 		background-color: white;
 		border-radius: 50%;
-		padding: 70px;
+		padding: 60px;
 		display: inline-block;
 		position: relative;
-		width: 80px;
-		height: 80px;
+		width: 70px;
+		height: 70px;
 		border: 3px solid white;
 	}
 
 	div#process div#icon3 a {
 		background-color: white;
 		border-radius: 50%;
-		padding: 70px;
+		padding: 60px;
 		display: inline-block;
 		position: relative;
-		width: 80px;
-		height: 80px;
+		width: 70px;
+		height: 70px;
 		border: 3px solid white;
 	}
 
@@ -574,38 +526,127 @@ div#process {
 
 /* TOOLBOX */
 div#toolbox {
-	min-height: auto;
-	height: 406px;
-	width: 100%;
+	height: auto;
 	background-color: #53555D;
 	color: white;
-	padding-top: 50px;
-	background-image: url('images/desk2.png');
-	background-size: contain;
+	padding: 50px;
+	background-image: url('../images/desk.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 40% 50%;
+
 }
 
 	div#toolbox div#maintool h2 {
 		font-size: 150px;
 		line-height: 100px;
 		text-align: left;
-		padding-left: 10px;
 	}
 
-	div#toolbox div#maintool {
-		padding: 50px;
-		position: relative;
-	}
 
 	div#toolbox div#subtool h4 {
 		text-align: right;
-		line-height: 28px;
-		font-size: 30px;
+		line-height: 34px;
+		font-size: 34px;
 	}
 
-	div#toolbox div#subtool {
-		position: absolute;
-		bottom: 60px;
+	div#toolbox div.toolboxpara {
+		width: 100%;
+		margin:auto;
+		padding-top: 35px;
 	}
+
+/* LETSTALK */
+div#talk {
+	background-color: #B3E9DF;
+	color: black;
+	margin: auto;
+	height: auto;
+	padding-bottom: 60px;
+	padding-top:40px;
+}
+
+	div#talk div#letstalk h2 {
+		text-align: right;
+		line-height: 45px;
+	}
+
+	div#talk div#letstalk {
+		padding-top:50px;
+		margin-top: 20px;
+	}
+
+	div#talk div#letstalk p {
+		text-align: right;
+		padding-top: 40px;
+	}
+
+	div#talk form {
+		margin-top: 35px;
+	}
+
+	div#talk form input {
+		width: 100%;
+	}
+
+	div#talk form input#examplemessage {
+		height: 178px;
+	}
+
+	div#talk form input[type="text"] {
+		margin-bottom: 11px;
+	}
+
+	div#talk form button {
+		display: inline-block;
+  		height: 40px;
+  		color: #FFF;
+  		text-align: center;
+  		font-family:'Bebas Neue';
+  		font-size: 20px;
+  		font-weight: 300;
+  		letter-spacing: .1rem;
+  		text-decoration: none;
+  		white-space: nowrap;
+  		background-color: #A99757;
+  		border-radius: 2px;
+  		border: 1px solid #A99757;
+  		cursor: pointer;
+  		box-sizing: border-box;
+  		width: 100%;
+	}
+
+/* FOOTER */
+div#footer {
+	background-color: #D6D7DF;
+	color:white;
+}
+div#footer nav {
+	margin-top: 20px;
+	height: auto;
+}
+div#footer p {
+	margin-top: 30px;
+	float: right;
+	text-align: center;
+
+}
+	div#footer nav ul {
+		list-style-type: none;
+	}
+		div#footer nav ul li {
+			display:inline;
+			margin-right: 10px;
+		}
+
+			div#footer nav ul li a i {
+				color:white;
+				text-decoration: none;
+				border: 2px solid white;
+				padding: 5px 7px;
+			}
+
+
 
 
 

@@ -92,40 +92,35 @@
 				<br>
 				<br>
 			</div>
-			<article class="caption" class="six columns offset-by-six">
-				<img class="caption__media" src="images/Bitmap.png">
-				<div class="caption__overlay">
-        			<h1 class="caption__overlay__title">Truckin' Good</h1>
-        			<p class="caption__overlay__content">UX and UI Design</p>
-    			</div>
-			</article>
-			<article class="caption">
-				<img class="caption__media" src="images/dogs.png">
-				<div class="caption__overlay">
-        			<h1 class="caption__overlay__title">Eat.Play.Love.</h1>
-        			<p class="caption__overlay__content">UX and UI Design</p>
-    			</div>
-			</article>
+			<div id="example1" class="six columns">
+				<article class="caption">
+					<img class="caption__media" src="images/Bitmap.png">
+					<div class="caption__overlay">
+       					<h1 class="caption__overlay__title">Truckin' Good</h1>
+       					<p class="caption__overlay__content">UX and UI Design</p>
+    				</div>
+				</article>
+			</div>
+			<div id="example2" class="six columns">
+				<article class="caption">
+					<img class="caption__media" src="images/dogs.png">
+					<div class="caption__overlay">
+       					<h1 class="caption__overlay__title">Eat.Play.Love.</h1>
+        				<p class="caption__overlay__content">UX and UI Design</p>
+    				</div>
+				</article>
+			</div>
 		</div>
 	</div>
 <!-- Next section -->
 	<div id="about">
-		<div class="=container">
-			<span id="taypic" class="four columns offset-by-eight">
-				<img src="images/TaylorPic.jpg" style="width:412px;height:548px;">
-			</span>
-		</div>
 		<div class="container">
-			<div class="text">
-				<span id="aboutA" class="sixteen columns">
-					<h2>About</h2>
-				</span>
-				<span id="first" class="four columns">
-					<p>My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences. My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences. My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences. My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences.</p>
-				</span>
-				<span id="second" class="four columns offset-by-one">	
-					<p>My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences. My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences. My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences. My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences.</p>
-				</span>
+			<div id="abouttext" class="two-thirds column">
+				<h2>About</h2>
+				<p>My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences. My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences. My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences. My name is Taylor Reyes and I’m a UX/UI Designer with a passion to create beautiful and functional user experiences.</p>
+			</div>
+			<div class="one-third column">
+				<img class="taypic" src="images/TaylorPic.jpg">
 			</div>
 		</div>
 	</div>
@@ -165,25 +160,60 @@
 			<div id="secrettext3" class="sixteen columns">
 				<h2>Survey <i class="fa fa-star" aria-hidden="true"></i> Usability <i class="fa fa-star" aria-hidden="true"></i> Analyze <i class="fa fa-star" aria-hidden="true"></i> Prototype </h2>
 			</div>
-			<div id="theprocess">
-				<h1>My Process</h1>
-			</div>
 		</div>
 	</div>
 <!-- Next section -->
 	<div id="toolbox">
 		<div class="container">
-			<div id="maintool" class="seven columns offset-by-four">
-				<h2 style="font-weight:300">My</h2>
-				<h2 style="font-weight: 500">Toolbox</h2>
-			</div>
-		</div>
-		<div class="container">
-			<div id="subtool" class="two columns offset-by-three">
-				<h4>Sketch<br>Adobe Illustrator<br>Adobe Photoshop<br>Balsamiq<br>Invision<br>UsabilityHub</h4>
+			<div class="toolboxpara">
+				<div id="subtool" class="five columns">
+					<h4>Sketch<br>Adobe Illustrator<br>Adobe Photoshop<br>Balsamiq<br>Invision<br>UsabilityHub</h4>
+				</div>
+				<div id="maintool" class="seven columns">
+					<h2 style="font-weight:300">My</h2>
+					<h2 style="font-weight:500">Toolbox</h2>
+				</div>
 			</div>
 		</div>
 	</div>
+<!-- Next section -->
+	<div id="talk">
+		<div class="container">
+			<div id="letstalk" class="six columns">
+				<h2 style="font-weight:200; font-size:100px" >Let's</h2><br>
+				<h2 style="font-weight:500; font-size:125px">Talk!</h2>
+				<p>Thank you so much for taking the time to check out my portfolio! <br><br>I’m currently seeking a UX/UI role in San Deigo, CA or Chicago, IL. If you liked what you see and want to learn more, you can contact me at <strong>tayyreyes@gmail.com</strong> or fill out form below. </p>
+			</div>
+			<div class="six columns">
+				<form>
+  					<input type="text" id="name" name="name" value="NAME">
+  					<input type="email" id="exampleEmailInput" name="mail" value="EMAIL">
+  					<input type="text" id="examplemessage" name="message" value="MESSAGE">
+  					<button type="button" onclick="alert('Message sent!')">SEND MESSAGE</button>
+				</form> 
+			</div>
+		</div>
+	</div>
+<!-- Next section -->
+	<div id="footer">
+		<div class="container">
+			<div class="six columns">
+				<nav>
+					<ul>
+						<li><a><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+						<li><a><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="six columns">
+				<p>&copy; 2016 Taylor Reyes | Designed & Developed by Taylor Reyes</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
 
 
 
