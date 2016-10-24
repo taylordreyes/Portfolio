@@ -233,7 +233,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"] {
-  margin: 6px 0;
+  margin: 4px 0;
 }
 
 input[type="email"],
@@ -279,7 +279,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #A99757;
+  border: 2px solid #F8F8FF;
   outline: 0; }
 label,
 legend {
