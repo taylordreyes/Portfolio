@@ -625,29 +625,29 @@ div#talk {
 
 	::-webkit-input-placeholder {
    		color: white;
-   		font-family: 'Roboto';
-   		font-weight: 100;
+   		font-family: 'Roboto', Arial;
+   		font-weight: 300;
    		font-size: 14px;
 	}
 
 	:-moz-placeholder { /* Firefox 18- */
    		color: white;
-   		font-family: 'Roboto';
-   		font-weight: 100;
+   		font-family: 'Roboto', Arial;
+   		font-weight: 300;
    		font-size: 14px;
 	}
 
 	::-moz-placeholder {  /* Firefox 19+ */
    		color: white;
-   		font-family: 'Roboto';
-   		font-weight: 100;
+   		font-family: 'Roboto', Arial;
+   		font-weight: 300;
    		font-size: 14px;
 	}
 
 	:-ms-input-placeholder {  
    		color: white;
-   		font-family: 'Roboto';
-   		font-weight: 100;
+   		font-family: 'Roboto', Arial;
+   		font-weight: 300;
    		font-size: 14px;
 	}
 
