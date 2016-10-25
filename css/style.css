@@ -58,99 +58,102 @@ img {
 	text-align: right;
 }
 
-/*CUSTOME MEDIA QUERIES*/
-@media (max-width: 414px) {
-	.caption {
-    	overflow: hidden;
-    	position: relative;
-    	right: 15%;
-    	padding-bottom: 5px;
-
-    	/* Only the -webkit- prefix is required these days */
-        -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+/*CUSTOM MEDIA QUERIES*/
+@media (min-width: 375px) and (max-width: 414px) {
+	header span#logo {
+		width: 70%;
+		margin: auto;
+		float: right;
+		padding-bottom: 10px;
 	}
 
-	div#process {
-		min-height: auto;
+	header ul {
+		width: 85%;
+		margin:auto;
+	}
+
+	div.hero {
+		width: 80%;
+		margin: auto;
+		}
+
+	div#about img {
+		width: 100%;
+		padding: 0;
+		margin:0;
 	}
 
 	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
 		visibility: hidden;
 	}
 
-	div#process div#theprocess {
-		visibility: hidden;
+	div#toolbox div#maintool h2{
+		position: relative;
+		line-height: 80px !important;
+		margin-left:-35px;
+		font-size: 120px !important;
 	}
 
+	div#footer nav {
+		margin-bottom: -20px;
+	}
 }
 
-@media (max-width: 667px) {
-	.caption {
-    	overflow: hidden;
-    	position: relative;
-      	padding-bottom: 5px;
-
-    	/* Only the -webkit- prefix is required these days */
-        -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+@media (min-width: 768px) and (max-width: 800px) {
+	div#about img.taypic {
+		position: absolute;
+		width: 260px;
+		padding-top: 30px;
 	}
 
 	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
 		visibility: hidden;
 	}
 
-	div#process div#theprocess {
-		visibility: hidden;
+	div#toolbox div.toolboxpara {
+		width: 100%;
+		margin-left:-50px !important;
 	}
 
-	div#toolbox div#maintool h2 {
-		font-size: 70px;
+	div#talk div#letstalk p {
+		margin-left: -25px;
+		font-size: 13px !important;
+		padding-top: 15px !important;
 	}
 
-	div#toolbox div#maintool {
-		width: 60%;
-		margin-left: 15%;
+	div#footer nav {
+		padding-top: 15px;
 	}
-
-	div#toolbox div#subtool {
-		width: 10%;
-		margin-left: 0;
-	}
-
 }
 	
 /* Larger than tablet */
-@media (max-width: 768px) {
-	.caption {
-    	overflow: hidden;
-    	position: relative;
-    	right: 0;
-
-    	/* Only the -webkit- prefix is required these days */
-        -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+@media (min-width: 801px) and (max-width: 950px){
+	div#about img.taypic {
+		position: absolute;
+		width: 260px;
+		padding-top: 30px;
 	}
 
-
-	div#toolbox div#maintool {
-		width: 70%;
-		margin-left: 20%;
+	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
+		visibility: hidden;
 	}
 
-	div#toolbox div#subtool {
-		width: 20%;
-		margin-left: 5%;
+	div#toolbox div.toolboxpara {
+		width: 100%;
+		margin-left:-50px !important;
 	}
 
+	div#talk div#letstalk p {
+		margin-left: -25px;
+		font-size: 13px !important;
+		padding-top: 15px !important;
+	}
 
+	div#footer nav {
+		padding-top: 15px;
+	}
 }
 
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
 
 /* HEADER */
 div#header {
@@ -213,8 +216,6 @@ p {
 
 		/* HERO */
 		div.hero {
-			max-width: 50%;
-			margin: auto;
 			position: relative;
 			top: 110px;
 			text-align: left;
@@ -331,7 +332,7 @@ div#work {
 /* ABOUT */
 div#about  {
 	color: black;
-	}
+}
 
 	div#about h2 {
 		padding-top: 40px;
@@ -599,7 +600,6 @@ div#talk {
 
 	div#talk form input#examplemessage {
 		height: 177px;
-
 	}
 
 	div#talk form button {
@@ -656,19 +656,21 @@ div#footer {
 	background-color: #D6D7DF;
 	color:white;
 }
-div#footer nav {
-	margin-top: 20px;
-	height: auto;
-}
-div#footer p {
-	margin-top: 30px;
-	float: right;
-	text-align: center;
 
-}
+	div#footer nav {
+		margin-top: 20px;
+	}
+
+	div#footer p {
+		margin-top: 28px;
+		float: right;
+		text-align: center;
+	}
+
 	div#footer nav ul {
 		list-style-type: none;
 	}
+
 		div#footer nav ul li {
 			display:inline;
 			margin-right: 10px;
@@ -678,7 +680,7 @@ div#footer p {
 				color:white;
 				text-decoration: none;
 				border: 2px solid white;
-				padding: 5px 7px;
+				padding: 7px 7px;
 			}
 
 
