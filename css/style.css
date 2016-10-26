@@ -582,6 +582,7 @@ div#talk {
 		padding-top: 40px;
 	}
 
+/* Custom form attributes */
 	div#talk form {
 		margin-top: 35px;
 	}
@@ -598,9 +599,18 @@ div#talk {
 		height: 50px;
 	}
 
-	div#talk form input#examplemessage {
-		height: 177px;
+	div#talk form textarea#examplemessage {
+		-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 100%;
 	}
+
+	div#talk form textarea {
+		margin-top: 5px;
+		height: 175px;
+	}
+
 
 	div#talk form button {
 		display: inline-block;
@@ -650,6 +660,22 @@ div#talk {
    		font-weight: 300;
    		font-size: 14px;
 	}
+
+/* Back to top button */
+	a.back-to-top {
+		display: none;
+		width: 50px;
+		height: 50px;
+		text-indent: -9999px;
+		position: fixed;
+		z-index: 999;
+		right: 40px;
+		bottom: 90px;
+		background: #222222 url("../images/up-arrow.png") no-repeat center 43%;
+	    -webkit-border-radius: 30px;
+	    -moz-border-radius: 30px;
+		border-radius: 30px;
+}
 
 /* FOOTER */
 div#footer {

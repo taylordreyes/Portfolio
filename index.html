@@ -26,6 +26,8 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type='text/css'>
 
+
+<!--Show/Hide div in My Process-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 	<script type="text/javascript">	
 		$(function() {
@@ -59,8 +61,55 @@
             });
 		});
 	</script>
+
+
+<!--Smooth Scrolling Script-->
+<script src="jquery.min.js"></script>
+<script>
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+        if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 900); //Change speed here up to 1000 milliseconds
+            return false;
+        }
+    });
+});
+</script>
+
+
+<!--Back to top button-->
+<script type="text/javascript">
+	$('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+</script>
+<script type="text/javascript">
+	var amountScrolled = 300;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
+});	
+</script>
+<script type="text/javascript">
+	$('a.back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+</script>
+
+
 </head>
 <body>
+
+
 	<!-- This is where your header will begin -->
 	<div id="header">
 		<div class="container">
@@ -70,9 +119,9 @@
 				</span>
 					<ul>
 						<li><a class="active" href="#">Home</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#talk">Contact</a></li>
 					</ul>
 			</header>
 			<div class="hero">
@@ -188,10 +237,11 @@
 				<form>
   					<input type="text" id="name" name="name" placeholder="NAME">
   					<input type="email" id="exampleEmailInput" name="mail" placeholder="EMAIL">
-  					<input type="text" id="examplemessage" name="message" placeholder="MESSAGE">
+  					<textarea rows="10" id="examplemessage" name="message" placeholder="MESSAGE"></textarea>
   					<button type="button" onclick="alert('Message sent!')">SEND MESSAGE</button>
 				</form> 
 			</div>
+			<a href="#" class="back-to-top">Back to Top</a>
 		</div>
 	</div>
 <!-- Next section -->
@@ -200,8 +250,8 @@
 			<div class="six columns">
 				<nav>
 					<ul>
-						<li><a><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-						<li><a><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/taylor-reyes-6a1b9227"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+						<li><a href="mailto:tayyreyes@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -210,11 +260,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
 
 
 
