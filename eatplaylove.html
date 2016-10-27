@@ -27,28 +27,79 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type='text/css'>
 
-
-<!--DropDown Menu Option-->
-
-
-
-<!--Smooth Scrolling Script-->
-<script src="jquery.min.js"></script>
+<!--Image Slideshow-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-$(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
-        if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 900); //Change speed here up to 1000 milliseconds
-            return false;
-        }
-    });
+$(document).ready(function() {
+  var slideIndex = 1;
+
+  function showSlides(n) {
+    var slides = $(".mySlides");
+    var i;
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  showSlides(slideIndex);
+
+  $(".prev").click(function() {
+    plusSlides(-1);
+  });
+
+  $(".next").click(function() {
+    plusSlides(1);
+  });
+
 });
 </script>
 
+
+<!--Smooth Scrolling Script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">$(function() {
+  // This will select everything with the class smoothScroll
+  // This should prevent problems with carousel, scrollspy, etc...
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+</script>
 
 <!--Back to top button-->
 <script type="text/javascript">
@@ -91,12 +142,13 @@ $(window).scroll(function() {
 						<li class="dropdown">
 							<a class="active" href="#" id="dropbtn">Work <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 								<div class="dropdown-content">
-									<a href="#">Research & Discovery</a>
-									<a href="#">Competition</a>
-									<a href="#">User Stories & Flows</a>
-									<a href="#">Brand Identity</a>
-									<a href="#">Low Fidelity Wireframes</a>
-									<a href="#">Conclusion</a>
+									<a class="smoothScroll" href="#eplproject">Project</a>
+									<a class="smoothScroll" href="#eplresearch">Research & Discovery</a>
+									<a class="smoothScroll" href="#eplcompetition">Competition</a>
+									<a class="smoothScroll" href="#epluser">User Stories & Flows</a>
+									<a class="smoothScroll" href="#eplbrand">Brand Identity</a>
+									<a class="smoothScroll" href="#eplwireframes">Low Fidelity Wireframes</a>
+									<a class="smoothScroll" href="#">Conclusion</a>
 								</div>
 						</li>
 					</ul>
@@ -224,7 +276,6 @@ $(window).scroll(function() {
 				<img src="images/eplbluelogo.png">
 				<img id="white" src="images/eplwhitelogo.png">
 			</div>
-
 		</div>
 	</div>
 
@@ -239,11 +290,65 @@ $(window).scroll(function() {
 		</div>
 	</div>
 
+<!-- Next section -->
+	<div id="eplusertesting">
+		<div class="container">
+			<div class="sixteen columns">
+				<h2>User Testing</h2>
+			</div>
+			<div class="seven columns">
+				<p>During the user testing stage, I really focused on the onboarding process. For this subscription-based product, this process is crucial and I wanted to make sure to get it right. <br> Key features through this process includes: </p>
+				<ul>
+					<li>Short and sweet instructions; simplicity is key <i class="fa fa-check-square" aria-hidden="true"></i></li>
+					<li>Breadcrumbs for easy “go back” editing <i class="fa fa-check-square" aria-hidden="true"></i></li>
+					<li>Back/Next buttons <i class="fa fa-check-square" aria-hidden="true"></i></li>
+					<li>Show the number of steps <i class="fa fa-check-square" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+			<div class="four columns">
+				<p>I used Lookback to record users going through this process.</p><br>
+				<p>In addition to the recordings, I also conducted a preference test for the checkout section of this process. I used Usaura to record users’ votes.</p>
+				<p><a href="#"><u>See all recordings, usability tests, and wireframes here</u></a></p>
+			</div>
+			<div class="sixteen columns">
+				<div class="slideshow">
+					<div class="mySlides fade">
+  						<img src="images/epl1.png" style="width: 80%">
+  					</div>
+ 					<div class="mySlides fade">
+  						<img src="images/epl2.png" style="width: 80%">
+  					</div>
+					<div class="mySlides fade">
+  						<img src="images/epl3.png" style="width: 80%">
+  					</div>
+					<div class="mySlides fade">
+  						<img src="images/epl4.png" style="width: 80%">
+  					</div>
+  					<a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left fa-5x" aria-hidden="true"></i></a>
+  					<a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-right fa-5x" aria-hidden="true"></i></a>
+  				</div>
+  				<br>
+  				<div style="text-align:center">
+  					<span class="dot" onclick="currentSlide(1)"></span> 
+  					<span class="dot" onclick="currentSlide(2)"></span> 
+  					<span class="dot" onclick="currentSlide(3)"></span> 
+   					<span class="dot" onclick="currentSlide(4)"></span> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Next section -->
 
 
 
+
+			<a href="#" class="back-to-top">Back to Top</a>
 
 <!-- End Document
 ================================================== -->
+
+
 </body>
 </html>
