@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Eat.Play.Love.</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type='text/css'>
+
+<!--Image Slideshow-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  var slideIndex = 1;
+
+  function showSlides(n) {
+    var slides = $(".mySlides");
+    var i;
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  showSlides(slideIndex);
+
+  $(".prev").click(function() {
+    plusSlides(-1);
+  });
+
+  $(".next").click(function() {
+    plusSlides(1);
+  });
+
+});
+</script>
+
+
+<!--Smooth Scrolling Script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">$(function() {
+  // This will select everything with the class smoothScroll
+  // This should prevent problems with carousel, scrollspy, etc...
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+<!--Back to top button-->
+<script type="text/javascript">
+	$('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+</script>
+<script type="text/javascript">
+	var amountScrolled = 300;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
+});	
+</script>
+<script type="text/javascript">
+	$('a.back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+</script>
+
+
+</head>
+<body>
+
+	<!-- This is where your header will begin -->
+	<div id="header">
+		<div class="container">
+			<header class="sixteen columns">
+				<span id="logo">
+					<a href="index.html"><img src="images/logo.png" style="width:130px;height:30px;"></a>
+				</span>
+				<ul class="eplnav">
+					<li><a href="index.html">Home</a></li>
+					<li class="dropdown">
+						<a class="active" href="#" id="dropbtn">Work <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							<div class="dropdown-content">
+								<a class="smoothScroll" href="#tgproject">Project</a>
+								<a class="smoothScroll" href="#tgresearch">Research & Discovery</a>
+								<a class="smoothScroll" href="#tgcompetition">Competition</a>
+								<a class="smoothScroll" href="#tguser">User Stories & Flows</a>
+								<a class="smoothScroll" href="#tgbrand">Brand Identity</a>
+								<a class="smoothScroll" href="#tgwireframes">Low Fidelity Wireframes</a>
+								<a class="smoothScroll" href="#tgusertesting">User Testing</a>
+								<a class="smoothScroll" href="#tgconclusion">Conclusion</a>
+							</div>
+					</li>
+				</ul>
+			</header>
+			<div class="truckingoodmain">
+				<div class="seven columns offset-by-three">
+					<h1>Truckin' Good</h1>
+					<p id="creations">User Research, User Testing, & User Interface</p>
+					<p id="date">June 2016</p>
+					<p id="description">Truckin’ Good is a mobile app that helps users find nearby food trucks; they can browse food truck's menus, leave a review, and even order straight from the app.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Next section -->
+	<div id="tgproject">
+		<div class="container">
+			<div class="sixteen columns">
+				<p>The popularity of food trucks is on the rise and is trending throughout major cities. People use food apps (i.e. Yelp, Google Search, etc.) to hunt down particular restaurants; however, many of those apps do not specialize in food trucks - their searches are very broad and sometimes lack variety of food options.<br><br>The goal of this project is to narrow down and specialize food searching to just food trucks. With this app, you will be able to:</p>
+				<ul>
+					<li>Locate nearby food trucks </li>
+					<li>See location for any date</li>
+					<li>Browse menus</li>
+					<li>Order from participating trucks</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- Next section -->
+	<div id="tgresearch">
+		<div class="container">
+			<div class="sixteen columns">
+				<h2>Research & Discovery</h2>
+				<p><strong>Create User Survey</strong><br>The first crucial step is to create a survey to get to know and understand the potential users of this app.</p>
+				<p id="results"><strong>Survey Results</strong></p>
+					<ul>
+						<li>76.9% say they use food applications to look up restaurants;</li>
+						<li>100% say they use their phones to look up places to eat; while 50% say they switch between their phones and laptops;</li>
+						<li>73.1% say they use Yelp to look up restaurants and they love that it's "easy and convenient" and the "accessabilty to a lot of information quickly";</li>
+						<li> Many users believe that some of the negative sides of these apps is that they have "inaccurate information regarding the restaurants" and that "not all restaurants are listed or shown";</li>
+						<li> Many of the users choose one app over the other due to honest reviews, accurate information, and bonus points if they have free delivery options and/or promo codes;</li>
+					</ul>
+				<p><strong>Survey Conclusions</strong><br>Taking all of this information in, Truckin’ Good needs to have updated and accurate information where people can leave honest reviews for future customers to view. It needs to be convenient, easy to use, and offer a lot of information quickly.</p>
+				<p><a href="#"><u>See the full user survey summary here</u></a></p>
+				<img src="images/tguserresearch.png">
+				<p><strong>Get To Know The User</strong><br>Personas were then developed around specific user goals for a food finder/ordering application.</p>
+				<p><a href="#"><u>See the full user personas here</u></a></p>
+				<div id="personas"><img src="images/tguserpersonas.png"></div>
+			</div>
+		</div>
+	</div>
+
+<!-- Next section -->
+	<div id="tgcompetition">
+		<div class="container">
+			<div class="sixteen columns">
+				<h2>Competition</h2>
+				<p>The main competitors for Truckin’ Good would include some of the most popular food applications out there today; Yelp, Eat24, and GrubHub. I also wanted to include  specialized food truck applications that are on the market today. After looking these up, I realized that none of those apps had a solid number of users and if they did, the users would rate that application pretty low due to complications with the app.</p>
+				<p><a href="#"><u>See the full competitive analysis here</u></a></p>
+			</div>
+		</div>
+	</div>
+
+<!-- Next section -->
+	<div id="tguser">
+		<div class="container">
+			<div class="sixteen columns">
+				<h2>User Stories & Flows</h2>
+				<p>The results of the survey confirmed that I need to build this platform based on ease of use and accuracy. With guidance of my competitive analysis, I created a prioritized list of user stories before developing user flows.</p>
+				<br>
+				<br>
+			</div>
+			<div class="tgexamples">
+			<div id="tg1" class="four columns">
+				<a href="#"><article class="caption">
+					<img class="caption__media" src="images/tgsitemap.png">
+					<div class="caption__overlay">
+       					<h1 class="caption__overlay__title">View Sitemap Diagram</h1>
+       					<p class="caption__overlay__content"></p>
+    				</div>
+				</article></a>
+			</div>
+			<div id="tg2" class="four columns">
+				<a href="#"><article class="caption">
+					<img class="caption__media" src="images/tgonboarding.png">
+					<div class="caption__overlay">
+       					<h1 class="caption__overlay__title">View Sign Up/In Diagram</h1>
+       					<p class="caption__overlay__content"></p>
+    				</div>
+				</article></a>
+			</div>
+			<div id="tg3" class="four columns">
+				<a href="#"><article class="caption">
+					<img class="caption__media" src="images/tguserstories.png">
+					<div class="caption__overlay">
+       					<h1 class="caption__overlay__title">View User Stories</h1>
+       					<p class="caption__overlay__content"></p>
+    				</div>
+				</article></a>
+			</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Next section -->
+	<div id="tgbrand">
+		<div class="container">
+			<div class="sixteen columns">
+				<h2>Brand Identity</h2>
+				<p>To get a clever brand name, I began by making a web diagram with words branching off of "food truck".Since the name of the app is playful, I wanted to include two types of fonts. One to feed off on that playfulness, the other to have a more serious tone and be appealing to the eye with any length of text.<br>The color palette I chose is iniviting and warm on any size screen. I also chose a nice neutral green is the action color to enhance any call to action items. </p>
+				<img src="images/tglogo.png">
+			</div>
+		</div>
+	</div>
+
+<!-- Next section -->
+	<div id="tgwireframes">
+		<div class="container">
+			<div class="sixteen columns">
+				<h2>Low Fidelity Wireframes</h2>
+				<p>After coming up with the brand and completing part of the user research, I was ready to begin creating low fidelity wireframes. With the help of my userflow, I created each screen by walking through each step. This phase helped me to organize information for mobile apps. Low fidelity wireframes were created within Balsamiq.</p>
+ 				<p><a href="#"><u>See all low fidelity wireframes here</u></a></p>
+			</div>
+		</div>
+	</div>
+
+<!-- Next section -->
+	<div id="tgusertesting">
+		<div class="container">
+			<div class="six columns" id="iphone">
+				<img src="images/tgiphone.png" style="height: 500px;">
+			</div>
+			<div class="six columns" id="picrows">
+				<img src="images/List.png" style="width: 370px;">
+				<p>After concluding an A/B test, I increased the size of the map to take up the whole screen and changed the look of the buttons from the wireframes. </p>
+				<img src="images/NavBar.png" style="width: 370px;"">
+				<p>Navigation is a very important feature in this app so I wanted users to have access to it at all times. Putting this at the bottom of the screen makes it consistently easy to use.</p><br>
+				<p>I used Peek Testing to record potential users using this application.</p><br>
+				<p><a href="#"><u>See my additional tests and wireframes here</u></a></p>
+			</div>
+		</div>
+	</div>
+
+<!-- Next section -->
+	<div id="tgconclusion">
+		<div class="container">
+			<div class="eight columns">
+				<h2>Conclusion</h2>
+				<p>Truckin’ Good was a fun, yet challenging undertaking. I'm walking away with great rewards that I can apply to any and all of my future endeavors. <br>I built this with users in mind from start to finish. The initial user research gave me foundation and a thorough understanding of what they want out of this app. I invested a lot of time and energy conducting user research and user testing. I made sure to be very deliberate with my findings and that gave me a lot of confidence to move forward with a solid prototype. <br>Even with that being said, I do believe that an area for development and improvement would be in usability testing. I would've loved to engage in more face-to-face testing with potential users to really narrow down on the userflows and the functionality of the app compared to other food apps on the market.</p>
+				<a href="#"><button type="button">View Prototype</button></a>
+			</div>
+			<div class="four columns">
+				<img src="images/tgiphone2.png" style="height: 500px;">
+			</div>
+			<a href="#" class="back-to-top">Back to Top</a>
+		</div>
+	</div>
+
+<!-- Next section -->
+	<div id="footer">
+		<div class="container">
+			<div class="six columns">
+				<nav>
+					<ul>
+						<li><a target="_blank" href="https://www.linkedin.com/in/taylor-reyes-6a1b9227"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+						<li><a href="mailto:tayyreyes@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="six columns">
+				<p>&copy; 2016 Taylor Reyes | Designed & Developed by Taylor Reyes</p>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

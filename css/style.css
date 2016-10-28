@@ -58,6 +58,17 @@ img {
 	text-align: right;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Bebas Neue', serif;
+	font-weight: 300;
+}
+
+p {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+}
+
 /*CUSTOM MEDIA QUERIES*/
 @media (min-width: 375px) and (max-width: 414px) {
 	header span#logo {
@@ -97,6 +108,7 @@ img {
 	div#footer nav {
 		margin-bottom: -20px;
 	}
+
 }
 
 @media (min-width: 768px) and (max-width: 800px) {
@@ -162,17 +174,7 @@ div#header {
 	min-height: 580px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Bebas Neue', serif;
-}
-
-p {
-	font-family: 'Roboto', Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-}
-
-	/* NAVIGATION */
+	/* Header Navigation */
 	header {
 		margin-top: 40px;
 		background-color: #FFFFFF;
@@ -214,17 +216,18 @@ p {
 				color:#ccc;
 			}
 
-		/* HERO */
-		div.hero {
-			position: relative;
-			top: 110px;
-			text-align: left;
-		}
+	/* Header Hero */
+	div.hero {
+		position: relative;
+		top: 110px;
+		text-align: left;
+	}
 
-		div.hero h1 {
-			font-size: 144px;
-			margin: auto;
-		}
+	div.hero h1 {
+		font-size: 144px;
+		margin: auto;
+	}
+
 
 /* WORK */
 div#work {
@@ -245,7 +248,7 @@ div#work {
 		margin: auto;
 	}
 
-	/* IMAGES */
+	/* Work Images */
 	div#example1 {
 		margin: 0px;
 		padding: 2px;
@@ -328,6 +331,7 @@ div#work {
         -webkit-transform: translateY(0);
             transform: translateY(0);
 	}
+
 
 /* ABOUT */
 div#about  {
@@ -525,6 +529,7 @@ div#process {
 		margin-bottom: 28px;
 	}
 
+
 /* TOOLBOX */
 div#toolbox {
 	height: auto;
@@ -557,6 +562,7 @@ div#toolbox {
 		padding-top: 35px;
 	}
 
+
 /* LETSTALK */
 div#talk {
 	background-color: #B3E9DF;
@@ -582,7 +588,7 @@ div#talk {
 		padding-top: 40px;
 	}
 
-/* Custom form attributes */
+	/* Custom form attributes */
 	div#talk form {
 		margin-top: 35px;
 	}
@@ -610,7 +616,6 @@ div#talk {
 		margin-top: 5px;
 		height: 175px;
 	}
-
 
 	div#talk form button {
 		display: inline-block;
@@ -711,59 +716,60 @@ div#footer {
 
 
 /* EATPLAYLOVE CSS */
+/* EATPLAYLOVE HEADER */
 div#header {
 	background-color: #FFFFFF;
 	min-height: 580px;
 }
 
-/* Header navigation */
-header li a, #dropbtn {
-	display: inline-block;
-	text-align: center;
-	padding: 7px 16px 5px 16px;
-	text-decoration: none;
-}
+	/* Header navigation */
+	header li a, #dropbtn {
+		display: inline-block;
+		text-align: center;
+		padding: 7px 16px 5px 16px;
+		text-decoration: none;
+	}
 
-header .dropdown:hover #dropbtn {
-	background-color: #F1F2F5;
-}
+	header .dropdown:hover #dropbtn {
+		background-color: #F1F2F5;
+	}
 
-header li.dropdown {
-	display: inline-block;
-}
+	header li.dropdown {
+		display: inline-block;
+	}
 
-header .dropdown-content {
-	display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+	header .dropdown-content {
+		display: none;
+    	position: absolute;
+    	background-color: #f9f9f9;
+    	min-width: 160px;
+    	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
 
-header .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    font-family: 'Roboto-Light';
-    font-size: 12px;
-}
+	header .dropdown-content a {
+    	color: black;
+    	padding: 12px 16px;
+    	text-decoration: none;
+    	display: block;
+    	text-align: left;
+    	font-family: 'Roboto-Light';
+    	font-size: 12px;
+	}
 
-header .dropdown-content a:hover {
-	background-color: #f1f1f1
-}
+	header .dropdown-content a:hover {
+		background-color: #f1f1f1
+	}
 
-header .dropdown:hover .dropdown-content {
-    display: block;
-}
+	header .dropdown:hover .dropdown-content {
+    	display: block;
+	}
 
-header li.dropdown i {
-	padding-left: 5px;
-}
+	header li.dropdown i {
+		padding-left: 5px;
+	}
 
 
-/* EPL HERO */
+	/* EPL Hero */
 	div.eatplaylovemain {
 		position: relative;
 		top: 110px;
@@ -792,15 +798,15 @@ header li.dropdown i {
 		text-align: justify;
 	}
 
-/* EPL Project */
-	div#eplproject {
-		color: black;
-		background-image: url('../images/projectbackground1.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		background-color: #FED9E4;
-		padding-bottom: 40px;
-	}
+/* EPL PROJECT */
+div#eplproject {
+	color: black;
+	background-image: url('../images/projectbackground1.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #FED9E4;
+	padding-bottom: 40px;
+}
 
 	div#eplproject p {
 		padding-top: 160px;
@@ -830,12 +836,12 @@ header li.dropdown i {
 	}
 
 
-/* EPL Research & Discovery */
-	div#eplresearch {
-		color: black;
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
+/* EPL RESEARCH & DISCOVERY */
+div#eplresearch {
+	color: black;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 
 	div#eplresearch h2 {
 		font-size: 80px;
@@ -886,18 +892,17 @@ header li.dropdown i {
 		margin: 0 auto;
 	}
 
-/* EPL Competition */
-	div#eplcompetition {
-		color: white;
-		background-image: 
-			linear-gradient(rgba(22,24,34,0.65),rgba(22,24,34,0.65)),
-			url("../images/eplcompetition.png");
-		background-repeat: no-repeat;
-		background-position: 10% 50%;
-		padding-top: 30px;
-		padding-bottom: 45px;
-	}
-
+/* EPL COMPETITION */
+div#eplcompetition {
+	color: white;
+	background-image: 
+		linear-gradient(rgba(22,24,34,0.65),rgba(22,24,34,0.65)),
+		url("../images/eplcompetition.png");
+	background-repeat: no-repeat;
+	background-position: 10% 50%;
+	padding-top: 30px;
+	padding-bottom: 45px;
+}
 
 	div#eplcompetition h2 {
 		font-size: 80px;
@@ -922,11 +927,11 @@ header li.dropdown i {
 	}
 
 
-/* EPL User Stories & Flows */
-	div#epluser {
-		padding-top: 50px;
-		padding-bottom: 60px;
-	}
+/* EPL USER STORIES & FLOWS */
+div#epluser {
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
 
 	div#epluser h2 {
 		font-size: 80px;
@@ -964,7 +969,7 @@ header li.dropdown i {
 
 
 
-/* EPL Brand Identity */
+/* EPL BRAND IDENTITY */
 div#eplbrand {
 	background-color: #F1F2F5;
 	padding-top: 70px;
@@ -991,17 +996,17 @@ div#eplbrand {
 	}
 
 
-/* EPL Low Fidelit Wireframes */
-	div#eplwireframes {
-		color: white;
-		background-image: 
-			linear-gradient(rgba(114,116,126,0.70),rgba(114,116,126,0.70)),
-			url("../images/eplwireframes.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding-top: 100px;
-		padding-bottom: 100px;
-	}
+/* EPL LOW WIREFRAMES */
+div#eplwireframes {
+	color: white;
+	background-image: 
+		linear-gradient(rgba(114,116,126,0.70),rgba(114,116,126,0.70)),
+		url("../images/eplwireframes.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
 
 	div#eplwireframes h2 {
 		font-size: 80px;
@@ -1025,11 +1030,11 @@ div#eplbrand {
 
 
 
-/* EPL User Testing */
-	div#eplusertesting {
-		padding-top: 40px;
-		padding-bottom: 60px;
-	}
+/* EPL USER TESTING */
+div#eplusertesting {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
 
 	div#eplusertesting h2 {
 		font-size: 80px;
@@ -1061,7 +1066,6 @@ div#eplbrand {
 		border: 1px solid #F1F2F5;
 		border-radius: 2px;
 		line-height: 25px;
-		
 	}
 
 	div#eplusertesting ul li i {
@@ -1162,10 +1166,388 @@ div#eplbrand {
   		to {opacity: 1;}
 	}
 
+
+/* EPL CONCLUSION */
+div#eplconclusion {
+	background-color: #171922;
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+	div#eplconclusion h2 {
+		font-size: 80px;
+		text-align: center;
+	}
+
+	div#eplconclusion p {
+		font-size: 17px;
+		line-height: 25px;
+		padding-bottom: 30px;
+	}
+
+	div#eplconclusion button {
+		display: block;
+  		height: 40px;
+  		color: #FFF;
+  		text-align: center;
+  		font-family:'Bebas Neue';
+  		font-size: 20px;
+  		font-weight: 300;
+  		letter-spacing: .1rem;
+  		text-decoration: none;
+  		background-color: #A99757;
+  		border-radius: 2px;
+  		border: 1px solid #A99757;
+  		cursor: pointer;
+  		padding-top: 3px;
+  		margin:auto;
+  		width: 50%;
+	}
+
 	
+/* TRUCKIN' GOOD CSS */
+/* TRUCKIN' GOOD HEADER */
+	/* Truckin' Good Hero */
+	div.truckingoodmain {
+		position: relative;
+		top: 110px;
+		text-align: left;
+		width: 90%;
+	}
+
+	div.truckingoodmain h1 {
+		font-size: 80px;
+		margin: auto;
+		border-bottom: 1px solid #171922;
+		padding:0;
+	}
+
+	div.truckingoodmain p#creations, p#date {
+		padding-top: 20px;
+		display: inline-block;
+	}
+
+	div.truckingoodmain p#date {
+		float: right;
+	}
+
+	div.truckingood p#description {
+		clear: right;
+		text-align: justify;
+	}
+
+/* TG PROJECT */
+div#tgproject {
+	color: white;
+	background-image: url('../images/projectbackground2.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #FED9E4;
+	padding-bottom: 40px;
+}
+
+	div#tgproject p {
+		padding-top: 160px;
+		padding-bottom: 0px;
+		margin-bottom: 0;
+		font-size: 15px;
+		font-weight: 400;
+	}
+
+	div#tgproject ul {
+		padding-top: 20px;
+		padding-bottom:20px;
+		list-style-type:none;
+
+	}
+
+	div#tgproject ul li {
+		font-family: 'Roboto';
+		font-size: 15px;
+		line-height: 13px;
+	}
+
+	div#tgproject ul li:before {
+		content: " - ";
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+/* TG RESEARCH & DISCOVERY */
+div#tgresearch {
+	color: black;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+	div#tgresearch h2 {
+		font-size: 80px;
+	}
+
+	div#tgresearch p#results {
+		margin-bottom: -10px;
+	}
+
+	div#tgresearch p, p a, p#results {
+		font-size: 15px;
+	}
+
+	div#tgresearch ul {
+		padding-top: 20px;
+		padding-bottom:20px;
+		list-style-type:none;
+		display: table-cell;
+	}
+
+	div#tgresearch ul li {
+		font-family: 'Roboto';
+		font-size: 15px;
+		line-height: 1.5em;
+		text-indent: -18px;
+		padding-left: 18px;
+		font-weight: 300;
+		height: auto;
+	}
+
+	div#tgresearch ul li:before {
+		content: " - ";
+		padding-right: 10px;
+	}
+
+	div#tgresearch p a {
+		text-decoration: none;
+		color: black;
+		font-weight: 500;
+	}
+
+	div#tgresearch img {
+		padding: 20px 0 40px 0;
+	}
+
+	div#tgresearch div#personas img {
+		display: block;
+		margin: 0 auto;
+	}
+
+/* TG COMPETITION */
+div#tgcompetition {
+	color: black;
+	background-image: 
+		linear-gradient(rgba(214,215,223,0.80),rgba(214,215,223,0.80)),
+		url("../images/tgcompetition.png");
+	background-repeat: no-repeat;
+	background-position: 10% 50%;
+	padding-top: 30px;
+	padding-bottom: 45px;
+}
+
+	div#tgcompetition h2 {
+		font-size: 80px;
+		padding-top: 50px;
+		text-align: right;
+		margin-bottom: 5px;
+	}
+
+	div#tgcompetition p {
+		text-align: right;
+		width: 72%;
+		float: right;
+		font-size: 15px;
+		margin-top:0px;
+	}
+
+	div#tgcompetition p a {
+		text-decoration: none;
+		color: black;
+		font-weight: 500;
+		font-size: 15px;
+	}
+
+
+/* TG USER STORIES & FLOWS */
+div#tguser {
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+	div#tguser h2 {
+		font-size: 80px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	div#tguser p {
+		font-size: 15px;
+		text-align: center;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	div.tgexamples  {
+		display: block;
+		margin: 0 auto;
+	}
+
+	div#tguser .caption:hover::before {
+    	background: rgba(169, 151, 87, 1);
+	}
+
+	div#tguser .caption__overlay__title {
+		font-size: 20px;
+		letter-spacing: 1px;
+		position: absolute;
+		left:15px;
+		top:5px;
+    }
+
+    div#tg1 .caption img, div#tg2 .caption img, div#tg3 .caption img {
+    	height: 160px;
+    }
 
 
 
+/* TG BRAND IDENTITY */
+div#tgbrand {
+	background-color: #171922;
+	padding-bottom: 170px;
+	background-image: url("../images/tgcolors.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: bottom center;
+	text-align: center;
+	color: white;
+}
+
+	div#tgbrand h2 {
+		font-size: 80px;
+		padding-top: 50px; 
+	}
+
+	div#tgbrand p {
+		font-size: 15px;
+	}
+
+	div#tgbrand img {
+		padding-bottom: 12px;
+		width: 70%;
+	}
+
+
+/* TG LOW WIREFRAMES */
+div#tgwireframes {
+	color: white;
+	background-image: 
+		linear-gradient(rgba(114,116,126,0.70),rgba(114,116,126,0.70)),
+		url("../images/tgwireframes.png");
+	background-size:cover;
+	background-repeat: no-repeat; 
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+	div#tgwireframes h2 {
+		font-size: 80px;
+		padding-top: 50px;
+	}
+
+	div#tgwireframes p {
+		font-size: 15px;
+		width: 80%;
+		margin: auto;
+		font-weight: 300;
+		padding-bottom: 20px;
+	}
+
+	div#tgwireframes p a {
+		text-decoration: none;
+		color: white;
+		font-weight: 400;
+		font-size: 15px;
+	}
+
+
+
+/* TG USER TESTING */
+div#tgusertesting {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+	div#tgusertesting p {
+		font-size: 15px;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	div#tgusertesting div#iphone img{
+		float: right;
+		margin-right: 50px;
+		padding-right: 50px;
+	}
+
+	div#tgusertesting p a {
+		text-decoration: none;
+		color: black;
+		font-weight: 400;
+		font-size: 15px;
+	}
+
+	div#tgusertesting div#picrows img {
+		padding-top: 20px;
+		padding-bottom:20px;
+		display: block;
+		margin: auto;
+	}
+
+	div#tgusertesting div#picrows {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 30px;
+	}
+
+
+/* TG CONCLUSION */
+div#tgconclusion {
+	background-color: #F1F2F5;
+	color: black;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+	div#tgconclusion h2 {
+		font-size: 80px;
+	}
+
+	div#tgconclusion p {
+		font-size: 17px;
+		line-height: 25px;
+		padding-bottom: 30px;
+	}
+
+	div#tgconclusion button {
+		display: block;
+  		height: 40px;
+  		color: #FFF;
+  		text-align: center;
+  		font-family:'Bebas Neue';
+  		font-size: 20px;
+  		font-weight: 300;
+  		letter-spacing: .1rem;
+  		text-decoration: none;
+  		background-color: #A99757;
+  		border-radius: 2px;
+  		border: 1px solid #A99757;
+  		cursor: pointer;
+  		padding-top: 3px;
+  		margin:auto;
+  		width: 60%;
+  		float: left;
+	}
+
+	div#tgconclusion img {
+		float: right;
+	}
 
 
 
