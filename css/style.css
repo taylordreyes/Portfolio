@@ -70,7 +70,7 @@ p {
 }
 
 /*CUSTOM MEDIA QUERIES*/
-@media (min-width: 375px) and (max-width: 414px) {
+@media (min-width: 375px) and (max-width: 459px) {
 	header span#logo {
 		width: 70%;
 		margin: auto;
@@ -87,7 +87,6 @@ p {
 		width: 100% !important;
 		padding-top: 180px !important;
 	}
-
 
 	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
 		visibility: hidden;
@@ -168,11 +167,10 @@ p {
 	div#tgconclusion img {
 		padding-top: 30px;
 		margin-right: 60px;
-
 	}
 }
 
-@media (min-width: 415px) and (max-width: 549px) {
+@media (min-width: 460px) and (max-width: 549px) {
 	div.truckingoodmain {
 		width: 100% !important;
 	}
@@ -210,6 +208,33 @@ p {
 
 	div#eplbrand img#white {
 		padding-bottom: 80px !important;
+	}
+
+	div#eplheader .dropdown-content {
+    	position: absolute;
+    	right: 	0;
+	}
+
+	div#tgheader .dropdown-content {
+    	position: absolute;
+    	right: 	0;
+	}
+
+	div.hero  {
+		text-align: center !important;
+		width: 100% !important;
+		padding-top: 180px !important;
+	}
+
+	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
+		visibility: hidden;
+	}
+
+	div#toolbox div#maintool h2{
+		position: relative;
+		line-height: 80px !important;
+		margin-left:-35px;
+		font-size: 120px !important;
 	}
 }
 
@@ -286,6 +311,16 @@ p {
 	div#eplbrand img {
 		display: none;
 	}
+
+	div#eplheader .dropdown-content {
+    	position: absolute;
+    	right: 	0;
+	}
+
+	div#tgheader .dropdown-content {
+    	position: absolute;
+    	right: 	0;
+	}
 }
 
 
@@ -339,6 +374,16 @@ p {
 		padding-top: 50px;
 	}
 
+	div#eplheader .dropdown-content {
+    	position: absolute;
+    	right: 	0;
+	}
+
+	div#tgheader .dropdown-content {
+    	position: absolute;
+    	right: 	0;
+	}
+
 }
 	
 /* Larger than tablet */
@@ -390,6 +435,16 @@ p {
 
 	div#eplbrand img {
 		padding-top: 40px;
+	}
+
+	div#eplheader .dropdown-content {
+    	position: absolute;
+    	right: 	0;
+	}
+
+	div#tgheader .dropdown-content {
+    	position: absolute;
+    	right: 	0;
 	}
 }
 
