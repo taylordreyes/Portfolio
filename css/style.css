@@ -80,19 +80,14 @@ p {
 
 	header ul {
 		width: 85%;
-		margin:auto;
 	}
 
-	div.hero {
-		width: 80%;
-		margin: auto;
-		}
-
-	div#about img {
-		width: 100%;
-		padding: 0;
-		margin:0;
+	div.hero  {
+		text-align: center !important;
+		width: 100% !important;
+		padding-top: 180px !important;
 	}
+
 
 	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
 		visibility: hidden;
@@ -109,7 +104,190 @@ p {
 		margin-bottom: -20px;
 	}
 
+	div.eatplaylovemain p#creations, div.eatplaylovemain p#date,div.eatplaylovemain p#description {
+		font-size: 12px !important;
+	}	
+
+	div.eatplaylovemain {
+		width: 100% !important;
+		padding-top: 200px !important;
+	}
+
+	div.truckingoodmain p#creations, div.truckingoodmain p#date, div.truckingoodmain p#description {
+		font-size: 13px !important;
+	}	
+
+	div.truckingoodmain {
+		width: 100% !important;
+		padding-top: 200px !important;
+	}
+
+	div#eplheader header ul {
+		width: 72%;
+	}
+
+	div#tgheader header ul {
+		width: 72%;
+	}
+
+	div#eplheader header ul li.dropdown {
+		z-index: 1;
+	}
+
+	div#tgheader header ul li.dropdown {
+		z-index: 1;
+	}
+
+	div#eplcompetition {
+		background-image: none !important;
+		background-color: rgba(22,24,34,0.65);
+	}
+
+	div#eplbrand {
+		padding-top: 10px !important;
+	}
+
+	div#eplbrand img {
+		position: relative;
+		right:10%;
+	}
+
+	div#eplbrand img#white {
+		padding-bottom: 80px !important;
+	}
+
+	div#tgcompetition {
+		background-image: none !important;
+		background-color: rgba(214,215,223,0.80);
+	}
+
+	div#tgconclusion button {
+  		width: 100% !important;
+	}
+
+	div#tgconclusion img {
+		padding-top: 30px;
+		margin-right: 60px;
+
+	}
 }
+
+@media (min-width: 415px) and (max-width: 549px) {
+	div.truckingoodmain {
+		width: 100% !important;
+	}
+
+	div.truckingoodmain p#creations, div.truckingoodmain p#date, div.truckingoodmain p#description {
+		font-size: 13px !important;
+	}	
+
+	div#tgcompetition {
+		background-image: none !important;
+		background-color: rgba(214,215,223,0.80);
+	}
+
+	div#tgconclusion button {
+  		width: 100% !important;
+	}
+
+	div#tgconclusion img {
+		padding-top: 30px;
+		margin-right: 60px;
+	}
+
+	div.eatplaylovemain p#creations, div.eatplaylovemain p#date,div.eatplaylovemain p#description {
+		font-size: 12px !important;	
+	}	
+
+	div.eatplaylovemain {
+		width: 100% !important;
+	}
+
+	div#eplcompetition {
+		background-image: none !important;
+		background-color: rgba(22,24,34,0.65);
+	}
+
+	div#eplbrand img#white {
+		padding-bottom: 80px !important;
+	}
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+	div.eatplaylovemain p#creations, div.eatplaylovemain p#date,div.eatplaylovemain p#description {
+		font-size: 12px !important;	
+	}	
+
+	div.eatplaylovemain {
+		width: 80% !important;
+	}
+
+	div.truckingoodmain p#creations, div.truckingoodmain p#date, div.truckingoodmain p#description {
+		font-size: 13px !important;
+	}	
+
+	div.truckingoodmain {
+		width: 100% !important;
+	}
+
+	div#about img {
+		display: none;
+	}
+
+	div#process div#secrettext1, div#secrettext2, div#secrettext3 {
+		visibility: hidden;
+	}
+
+	div#process div#icon1 img {
+		height: 50px !important;
+	}
+
+	div#process div#icon1 a {
+		width: 35px !important;
+		height: 35px !important;
+	}
+
+	div#process div#icon2 img {
+		height: 50px !important;
+	}
+
+	div#process div#icon2 a {
+		width: 35px !important;
+		height: 35px !important;
+	}
+
+	div#process div#icon3 img {
+		height: 50px !important;
+	}
+
+	div#process div#icon3 a {
+		width: 35px !important;
+		height: 35px !important;
+	}
+
+	div#toolbox div#maintool h2{
+		line-height: 70px !important;
+		font-size: 100px !important;
+	}
+
+	div#toolbox div#subtool h4 {
+		line-height: 30px !important;
+		font-size: 30px !important;
+	}
+
+	div#talk p {
+		font-size: 13px !important;
+	}
+
+	div#tgconclusion img {
+		display: none;
+	}
+
+	div#eplbrand img {
+		display: none;
+	}
+}
+
 
 @media (min-width: 768px) and (max-width: 800px) {
 	div#about img.taypic {
@@ -136,10 +314,35 @@ p {
 	div#footer nav {
 		padding-top: 15px;
 	}
+
+	div.eatplaylovemain p#creations, div.eatplaylovemain p#date,div.eatplaylovemain p#description {
+		font-size: 12px !important;
+	}	
+
+	div.eatplaylovemain {
+		width: 80% !important;
+	}
+
+	div.truckingoodmain p#creations, div.truckingoodmain p#date, div.truckingoodmain p#description {
+		font-size: 13px !important;
+	}	
+
+	div.truckingoodmain {
+		width: 100% !important;
+	}
+
+	div#eplbrand {
+		padding-top: 10px !important;
+	}
+
+	div#eplbrand img {
+		padding-top: 50px;
+	}
+
 }
 	
 /* Larger than tablet */
-@media (min-width: 801px) and (max-width: 950px){
+@media (min-width: 801px) and (max-width: 1000px){
 	div#about img.taypic {
 		position: absolute;
 		width: 260px;
@@ -164,14 +367,47 @@ p {
 	div#footer nav {
 		padding-top: 15px;
 	}
+
+	div.eatplaylovemain p#creations, div.eatplaylovemain p#date, div.eatplaylovemain p#description {
+		font-size: 13px !important;
+	}	
+
+	div.eatplaylovemain {
+		width: 60% !important;
+	}
+
+	div.truckingoodmain p#creations, div.truckingoodmain p#date, div.truckingoodmain p#description {
+		font-size: 13px !important;
+	}	
+
+	div.truckingoodmain {
+		width: 70% !important;
+	}
+
+	div#eplbrand {
+		padding-top: 10px !important;
+	}
+
+	div#eplbrand img {
+		padding-top: 40px;
+	}
+}
+
+@media (min-width: 1001px) and (max-width: 1011px){
+	div.eatplaylovemain p#creations, div.eatplaylovemain p#date, div.eatplaylovemain p#description {
+		font-size: 13px !important;
+	}	
+
+	div.eatplaylovemain {
+		width: 60% !important;
+	}
 }
 
 
 /* HEADER */
 div#header {
 	background-color: #FFFFFF;
-	margin: auto;
-	min-height: 580px;
+	min-height: 540px;
 }
 
 	/* Header Navigation */
@@ -202,13 +438,12 @@ div#header {
 
 			header ul li a.active {
 				border-bottom: 1px solid #171922;
-				padding: 7px 7px;
+				padding-bottom: 3px;
 			}
 			
 			header ul li a {
 				color: #171922;
 				text-decoration: none;
-				padding: 14px 16px;
 				text-align: center;
 			}
 			
@@ -218,14 +453,15 @@ div#header {
 
 	/* Header Hero */
 	div.hero {
-		position: relative;
-		top: 110px;
 		text-align: left;
+		width: 60%;
+		margin: auto;
+		padding-top: 150px;
 	}
 
 	div.hero h1 {
 		font-size: 144px;
-		margin: auto;
+		margin: 5px;
 	}
 
 
@@ -341,6 +577,7 @@ div#about  {
 	div#about h2 {
 		padding-top: 40px;
 		font-size:100px;
+		margin-bottom: 3px;
 	}
 
 	div#about img {
@@ -362,7 +599,6 @@ div#process {
 
 	div#process div#icon1 {
 		padding-top: 45px;	
-
 	}
 
 	div#process div#icon2 {
@@ -717,9 +953,9 @@ div#footer {
 
 /* EATPLAYLOVE CSS */
 /* EATPLAYLOVE HEADER */
-div#header {
+div#eplheader {
 	background-color: #FFFFFF;
-	min-height: 580px;
+	min-height: 560px;
 }
 
 	/* Header navigation */
@@ -771,10 +1007,10 @@ div#header {
 
 	/* EPL Hero */
 	div.eatplaylovemain {
-		position: relative;
-		top: 110px;
 		text-align: left;
-		width: 90%;
+		width: 50%;
+		margin: auto;
+		padding-top: 170px;
 	}
 
 	div.eatplaylovemain h1 {
@@ -1208,12 +1444,17 @@ div#eplconclusion {
 	
 /* TRUCKIN' GOOD CSS */
 /* TRUCKIN' GOOD HEADER */
+div#tgheader {
+	background-color: #FFFFFF;
+	min-height: 560px;
+}
+
 	/* Truckin' Good Hero */
 	div.truckingoodmain {
-		position: relative;
-		top: 110px;
 		text-align: left;
-		width: 90%;
+		width: 50%;
+		margin: auto;
+		padding-top: 170px;
 	}
 
 	div.truckingoodmain h1 {
@@ -1243,7 +1484,7 @@ div#tgproject {
 	background-image: url('../images/projectbackground2.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-color: #FED9E4;
+	background-color: #171922;
 	padding-bottom: 40px;
 }
 
