@@ -61,6 +61,14 @@
             });
 		});
 	</script>
+	<script type="text/javascript">	
+		$(function() {
+ 			$('div#icon1').mouseover(function() {
+    			$('.showinfo').removeClass('.showinfo');
+      			// Apply your class to this
+       			$(this).addClass('.showinfo');
+		});
+	</script>
 
 
 <!--Smooth Scrolling Script-->
@@ -111,7 +119,7 @@ $(window).scroll(function() {
 
 
 	<!-- This is where your header will begin -->
-	<div id="header">
+	<div id="mainheader">
 		<div class="container">
 			<header class="sixteen columns">
 				<span id="logo">
@@ -177,7 +185,7 @@ $(window).scroll(function() {
 	<div id="process">
 		<div class="container">
 			<div class="one-third column">
-				<div id="icon1">
+				<div id="icon1" data-match="think">
 					<a>
 						<img src="images/thinkicon.png" alt="think" height="30">
 					</a>
