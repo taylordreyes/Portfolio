@@ -19,12 +19,35 @@
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="css/skeleton.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type='text/css'>
+
+
+<!--Fixed NavBar-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    var scroll_start = 0;
+    var startchange = $(".hero");
+    var offset = startchange.offset();
+
+    if (startchange.length) {
+        $(document).scroll(function () {
+            scroll_start = $(this).scrollTop();
+            if (scroll_start > offset.top) {
+                $("#navbar").css('background-color', 'rgba(214,215,223,.75)');
+            } else {
+                $('#navbar').css('background-color', 'transparent');
+            }
+        });
+    }
+});
+</script>
+
 
 
 <!--Show/Hide div in My Process-->
@@ -122,15 +145,21 @@ $(window).scroll(function() {
 	<div id="mainheader">
 		<div class="container">
 			<header class="sixteen columns">
-				<span id="logo">
-					<a href="#"><img src="images/logo.png" style="width:130px;height:30px;"></a>
-				</span>
-					<ul>
-						<li><a class="active" href="#">Home</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#talk">Contact</a></li>
-					</ul>
+			<nav id="navbar">
+				<a class="logo" href="#"><img src="images/logo.png" style="width:130px;height:30px;"></a>
+				<ul>
+					<li><a class="active" href="#">Home</a></li>
+					<li class="dropdown">
+						<a href="#work" id="dropbtn">Work <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							<div class="dropdown-content">
+								<a href="truckingood.html">Truckin' Good</a>
+								<a href="eatplaylove.html">Eat.Play.Love.</a>
+							</div>
+					</li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#talk">Contact</a></li>
+				</ul>
+			</nav>
 			</header>
 			<div class="hero">
 				<div class="sixteen columns">
@@ -140,6 +169,7 @@ $(window).scroll(function() {
 			</div>
 		</div>
 	</div>
+
 	<!-- Next section -->
 	<div id="work">
 		<div class="container">

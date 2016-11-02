@@ -26,6 +26,28 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type='text/css'>
 
+<!--Fixed NavBar-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    var scroll_start = 0;
+    var startchange = $(".eatplaylovemain");
+    var offset = startchange.offset();
+
+    if (startchange.length) {
+        $(document).scroll(function () {
+            scroll_start = $(this).scrollTop();
+            if (scroll_start > offset.top) {
+                $("#navbar").css('background-color', 'rgba(214,215,223,.75)');
+            } else {
+                $('#navbar').css('background-color', 'transparent');
+            }
+        });
+    }
+});
+</script>
+
+
 <!--Image Slideshow-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
@@ -132,25 +154,21 @@ $(window).scroll(function() {
 	<div id="eplheader">
 		<div class="container">
 			<header class="sixteen columns">
-				<span id="logo">
-					<a href="index.html"><img src="images/logo.png" style="width:130px;height:30px;"></a>
-				</span>
+			<nav id="navbar">
+				<a class="logo" href="#"><img src="images/logo.png" style="width:130px;height:30px;"></a>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li class="dropdown">
 						<a class="active" href="#" id="dropbtn">Work <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 							<div class="dropdown-content">
-								<a class="smoothScroll" href="#eplproject">Project</a>
-								<a class="smoothScroll" href="#eplresearch">Research & Discovery</a>
-								<a class="smoothScroll" href="#eplcompetition">Competition</a>
-								<a class="smoothScroll" href="#epluser">User Stories & Flows</a>
-								<a class="smoothScroll" href="#eplbrand">Brand Identity</a>
-								<a class="smoothScroll" href="#eplwireframes">Low Fidelity Wireframes</a>
-								<a class="smoothScroll" href="#eplusertesting">User Testing</a>
-								<a class="smoothScroll" href="#eplconclusion">Conclusion</a>
+								<a href="truckingood.html">Truckin' Good</a>
+								<a href="#">Eat.Play.Love.</a>
 							</div>
 					</li>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#talk">Contact</a></li>
 				</ul>
+			</nav>
 			</header>
 			<div class="eatplaylovemain">
 				<div class="sixteen columns">
