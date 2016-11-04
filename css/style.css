@@ -983,6 +983,7 @@ div#talk {
 
 	div#talk form input {
 		width: 100%;
+		color: black;
 	}
 
 	div#talk form input#name {
@@ -998,6 +999,9 @@ div#talk {
 	    -moz-box-sizing: border-box;
 		box-sizing: border-box;
 		width: 100%;
+		font-family: 'Roboto';
+		color: black;
+		font-weight: 300;
 	}
 
 	div#talk form textarea {
