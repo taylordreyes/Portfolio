@@ -69,8 +69,6 @@ p {
 }
 
 /*CUSTOM MEDIA QUERIES*/
-
-
 @media (min-width: 360px) and (max-width: 479px) {
 	header .logo {
 		width: 100%;
